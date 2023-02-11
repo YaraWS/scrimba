@@ -1,8 +1,11 @@
 import {menuArray} from '/data.js'
 
 const container = document.getElementById("container")
+let bottonContainer = document.getElementById("botton-container")
 let order = document.getElementById("order")
 let newMenuArray = []
+let finalPriceArray = []
+let finalPrice = ""
 let orderSummary = ""
 let test = document.getElementById("test")
 
@@ -16,6 +19,63 @@ document.addEventListener('click',function(e){
 
 
 
+//**This function will select the whole object that matched the id clicked and store it inside the variable targetItem. Originally we are storaging an array but to make it into an object we will include the [0] at the end, since this array will Always hold only 1 item.
+function selectItem(dishId){
+   const targetItem = menuArray.filter(function(dish){
+      return dish.id == dishId 
+   })[0]
+    
+   
+   addItem(targetItem)  
+}
+
+
+// **This function pushes the objects clicked into a new array called newMenuArray. It also pushes all the prices of the items clicked into an array called finalPriceArray. Inside the variable finalPrice we storaged the sum off all the items */
+function addItem(item){
+
+   newMenuArray.push(item)
+   
+   finalPriceArray.push(item.price)
+   
+   finalPrice = finalPriceArray.reduce(function(accumulator, currentValue) {
+         return accumulator + currentValue;
+      }, 0); 
+   
+
+   renderFinalOrder(newMenuArray,finalPrice)
+}
+
+
+
+function renderFinalOrder(targetItem){
+    let a = ""
+   
+    bottonContainer = `dsfasdfsdf`
+
+    newMenuArray.forEach(function(item){
+
+     a= 
+     `<div class"order-top order">
+         <div class="a">
+            ${item.name} 
+            <button class="remove-btn" id="remove-btn">remove</button>
+            <span>${item.price}</span>
+         </div>
+     </div>
+         <div>
+         Total sum : $ ${finalPrice}
+         </div>
+
+  `
+   })
+
+   test.innerHTML+= a
+   
+}
+
+
+renderFinalOrder()
+
 //**Add the botton of the order */
 // function addBotton(){
 
@@ -28,63 +88,6 @@ document.addEventListener('click',function(e){
 //    <button class="order-btn" id="order">Complete Order</button>
 // `
 // }
-
-
-//**This function will select the whole object that matched the id clicked and store it inside the variable targetItem. Originally we are storaging an array but to make it into an object we will include the [0] at the end, since this array will Always hold only 1 item.
-function selectItem(dishId){
-   const targetItem = menuArray.filter(function(dish){
-      return dish.id == dishId 
-   })[0]
-    
-   
-   addItem(targetItem)  
-}
-
-
-// **This function pushes the objects clicked into a new array called newMenuArray */
-function addItem(item){
-
-   newMenuArray.push(item)
-   console.log({newMenuArray});
-   renderFinalOrder(newMenuArray)
-}
-
-
-function renderFinalOrder(targetItem){
-
-   
-    let a = ""
-
-    newMenuArray.forEach(function(item){
-
-      
-     a= 
-     `   <div class"order-top order">
-     <div>
-     ${item.name} 
-     <button class="remove-btn" id="remove-btn">remove</button>
-   </div>
-     ${item.price}
- </div>
-
- <hr>
-
- <div class="order-botton">
-   <h1>Total Price</h1>
-   $
- </div>
- </div>
-  `
-      
-      
-   })
-
-   test.innerHTML+= a
-
-}
-
-
-renderFinalOrder()
    
 
 //***The function renderData uses an array to access the data and concatenate it on a variable using a html boiling plate. The boilerplate uses variables that access the data.js file.  
