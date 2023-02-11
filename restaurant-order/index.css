@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
+body{
+  background-color: green;
+}
+
+header{
+  width:600px;
+  height:167px;
+  background-image:url("./img/header.png");
+  color: white;
+  left: 0px;
+  top: 0px;
+}
+
+h2{
+  font-family: 'Smythe', cursive;
+  font-size: 28px;
+  line-height: 16.8px;
+  
+}
+
+.add-btn{
+  font-size: 50px;
+  border: none;
+  margin-top: 8px;
+  
+}
+
+
+.phone{
+  width: 600px;
+  height: 1161px;
+  background-color: white;
+  margin: auto;
+}
+
+.item{
+  display: flex;
+  border-bottom: 2px solid #F5F5F5;
+  /* border: 2px solid blue; */
+  margin-left: 46px;
+  margin-top: 67px;
+  width: 508px;
+  height: 140px;
+}
+
+.description{
+  /* border: 2px solid blue; */
+  padding-left: 20px;
+
+}
+
+.ingredients{
+  width: 300px;
+  font-family: Smythe;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #8B8B8B;
+
+
+}
+.price{
+  font-family: 'Smythe', cursive;
+  font-size:20px;
+  line-height: 24px;
+}
+
+.image{
+  font-size: 60px;
+  text-align:centr;
+  width: 70px;
+  height: 89px;
+  /* border: 2px solid purple; */
+}
+
+.order{
+  width: 508px;
+  height: 319px;
+  /* border: 2px solid purple; */
+  margin: auto;
+  margin-top: 45px;
+  font-family: Smythe;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+.order-btn{
+width: 508px;
+height: 60px;
+background: #16DB99;
+color: white;
+font-family: Verdana;
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+border-radius: 3px;
+border: none;
+}
+
+.order-title{
+  text-align: center;
+  font-family: Smythe;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+}
+
+hr{
+  border: none;
+  height: 2px;
+  background-color: #393333; 
+}
+
+.remove-btn{
+  background-color:white;
+  color: #BBBBBB;
+  height: 22px;
+  width: 77px;
+  left: 102px;
+  top: 868px;
+  border-radius: nullpx;
+  font-family: Verdana;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  border: none;
+}
+
+.order-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-botton{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-botton h1{
+  font-family: Smythe;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.display{
+  display:none;
+  background-color: blue;
+}
+
+.main-itens{
+  /* display: flex;
+  flex-direction: column;
+  background-color: yellow; */
+  
+}
+
+.a{
+  border: 1px solid red;
+}
+
+.b{
+  border: 1px solid rgb(42, 15, 190);
+}
