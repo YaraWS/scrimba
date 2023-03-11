@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
 body{
-  background-color: green;
+  background-color: rgb(176, 188, 176);
 }
 
 header{
@@ -79,7 +79,7 @@ h2{
 .order{
   width: 508px;
   height: 319px;
-  /* border: 2px solid purple; */
+  /* border: 2px solid red; */
   margin: auto;
   margin-top: 45px;
   font-family: Smythe;
@@ -139,6 +139,7 @@ hr{
 
 .order-top{
   /* display: flex;
+  flex-direction: column;
   justify-content: space-between; */
 }
 
@@ -176,4 +177,22 @@ hr{
 .a span{
   padding-right: 3px;
 
+}
+
+.test{
+  /* border: 2px solid purple; */
+  margin-bottom: 10px;
+  padding: 5px 0px 5px 0px;
+  display: flex;
+  justify-content:space-between;
+  align-items: start;
+}
+
+
+.test span{
+ /* display: flex;
+ justify-content:space-between ;
+
+ margin: 0px;
+  border: 2px solid green; */
 }

@@ -1,0 +1,8 @@
+
+Event Listener [selectItem(dishId)]   >   selectItem(dishId) [addItem(targetItem] >   
+
+addItem(item) [cart.push(item)], [calculatePrice(cart)], [getHtmlFromCart(cart)]  >
+
+*calculatePrice(cart) [renderCart(sumPrices)] > renderCart(cart,sumPrice)[renderFinalOrder(html)] > renderFinalOrder(html)[]
+
+*getHtmlFromCart(cart) [return html]
