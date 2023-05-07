@@ -10,3 +10,6 @@ With this app you can select iteams on a menu and order them online.
 
 ## # Responsive Blog
 This is a page to exercise responsive design.
+
+## # Splash Page
+This is a page to exercise responsive design, concepts such as flexbox, order and text transform.
