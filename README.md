@@ -13,4 +13,4 @@ This is a page to exercise responsive design.
 
 ## # Splash Page
 This is a page to exercise responsive design, concepts such as flexbox, order and text transform.
-splash-page-exercise.netlify.app
+[splash-page-exercise.netlify.app](http://splash-page-exercise.netlify.app "splash-page-exercise.netlify.app")
