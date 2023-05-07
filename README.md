@@ -7,3 +7,6 @@ Mass (Kilograms/Pounds)
 
 ## # Restaurant Ordering App
 With this app you can select iteams on a menu and order them online.
+
+## # Responsive Blog
+This is a page to exercise responsive design.
