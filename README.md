@@ -8,7 +8,7 @@ https://unit-conversion-exercise.netlify.app/
 
 ## # Restaurant Ordering App
 With this app you can select iteams on a menu and order them online.
-restaurant-order-exercise.netlify.app/
+https://restaurant-order-exercise.netlify.app/
 
 ## # Responsive Blog
 This is a page to exercise responsive design.
